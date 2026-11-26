@@ -136,6 +136,8 @@ const removeAsyncItem = async (key: string): Promise<void> => {
   }
 };
 
+const PRODUCTION_API_URL = 'https://shelf-life-app-elgp.onrender.com';
+
 const getConfiguredApiUrl = (): string | null => {
   const configuredUrl =
     process.env.EXPO_PUBLIC_API_URL ||
@@ -155,6 +157,10 @@ const getDefaultApiBaseUrl = (): string => {
   const configuredUrl = getConfiguredApiUrl();
   if (configuredUrl) {
     return configuredUrl;
+  }
+
+  if (typeof __DEV__ !== 'undefined' && !__DEV__) {
+    return PRODUCTION_API_URL;
   }
 
   if (Platform.OS === 'web' && typeof window !== 'undefined' && window.location?.hostname) {
@@ -220,7 +226,9 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     }
 
     const configuredProdUrl =
-      typeof __DEV__ !== 'undefined' && !__DEV__ ? getConfiguredApiUrl() : null;
+      typeof __DEV__ !== 'undefined' && !__DEV__
+        ? getConfiguredApiUrl() || PRODUCTION_API_URL
+        : null;
 
     set({
       user: initialUser,

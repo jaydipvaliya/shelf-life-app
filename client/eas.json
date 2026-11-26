@@ -14,7 +14,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://your-production-server-url.com"
+        "EXPO_PUBLIC_API_URL": "https://shelf-life-app-elgp.onrender.com"
       }
     },
     "production": {
@@ -23,7 +23,7 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://your-production-server-url.com"
+        "EXPO_PUBLIC_API_URL": "https://shelf-life-app-elgp.onrender.com"
       }
     }
   },
