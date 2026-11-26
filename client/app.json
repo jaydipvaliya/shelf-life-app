@@ -27,7 +27,8 @@
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.POST_NOTIFICATIONS",
-        "android.permission.READ_MEDIA_IMAGES"
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO"
       ],
       "predictiveBackGestureEnabled": false
     },
@@ -56,6 +57,11 @@
           "cameraPermission": "Allow Shelf Life to use the camera to scan grocery barcodes."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ba463d4f-0b8c-4e14-bee0-fd05fe3908c1"
+      }
+    }
   }
 }
