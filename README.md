@@ -8,14 +8,18 @@
 
 A full-stack mobile & web kitchen inventory tracker powered by **React Native (Expo)**, **Node.js / Express**, **MongoDB**, **Cloudinary**, **Spoonacular**, and **Gemini Vision AI**.
 
+[![Download APK](https://img.shields.io/badge/Download-Android%20APK%20(v1.0.0)-124831?style=for-the-badge&logo=android&logoColor=white)](https://github.com/jaydipvaliya/shelf-life-app/releases/download/v1.0.0/application-07b5880a-070e-4a84-b0ff-f36650eef89b.apk)
+[![Latest Release](https://img.shields.io/badge/GitHub%20Release-v1.0.0-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jaydipvaliya/shelf-life-app/releases/latest)
+[![Live Backend](https://img.shields.io/badge/Render%20API-Live-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://shelf-life-app-elgp.onrender.com/api/health)
 [![Expo SDK](https://img.shields.io/badge/Expo-SDK%2057-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
 [![React Native](https://img.shields.io/badge/React%20Native-0.86-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactnative.dev/)
 [![Express](https://img.shields.io/badge/Express-4.21-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas%20%2F%20Mongoose%208-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Gemini AI](https://img.shields.io/badge/Gemini%20Vision-Receipt%20AI-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
-[![Render Ready](https://img.shields.io/badge/Deploy-Render%20Blueprint-46E3B7?style=for-the-badge&logo=render&logoColor=black)](./render.yaml)
 
 <br />
+
+> **Try on Android:** [Download Shelf Life v1.0.0 APK](https://github.com/jaydipvaliya/shelf-life-app/releases/download/v1.0.0/application-07b5880a-070e-4a84-b0ff-f36650eef89b.apk) • [View Release Notes](https://github.com/jaydipvaliya/shelf-life-app/releases/tag/v1.0.0) • [Live API Health](https://shelf-life-app-elgp.onrender.com/api/health)
 
 <img src="docs/images/hero-banner.jpg" alt="Shelf Life Hero Banner" width="100%" />
 
