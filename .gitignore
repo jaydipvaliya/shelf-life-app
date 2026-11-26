@@ -1,0 +1,50 @@
+# Environment & secret files (never commit secrets)
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+*firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+
+# Dependencies
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+
+# Server uploads, OCR binary cache & logs
+server/uploads/
+server/.tesseract-cache/
+*.traineddata
+*.log
+*.tmp
+coverage/
+
+# Expo / React Native / Android / iOS build artifacts
+client/.expo/
+client/dist/
+client/web-build/
+client/android/
+client/ios/
+client/.kotlin/
+client/expo-env.d.ts
+*.tsbuildinfo
+*.orig.*
+*.apk
+*.aab
+*.ipa
+
+# OS & Local Editor / Assistant configs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+client/.claude/

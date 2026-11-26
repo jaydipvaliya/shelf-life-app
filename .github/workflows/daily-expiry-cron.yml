@@ -1,0 +1,25 @@
+name: Daily Expiry Notification Cron
+
+on:
+  schedule:
+    # Runs daily at 08:00 AM IST (02:30 UTC)
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger-expiry-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render Expiry Check Endpoint
+        env:
+          BACKEND_URL: ${{ secrets.BACKEND_URL }}
+          ADMIN_JOB_SECRET: ${{ secrets.ADMIN_JOB_SECRET }}
+        run: |
+          if [ -z "$BACKEND_URL" ] || [ -z "$ADMIN_JOB_SECRET" ]; then
+            echo "Set BACKEND_URL and ADMIN_JOB_SECRET in GitHub Actions secrets."
+            exit 1
+          fi
+          curl -fS -X POST "${BACKEND_URL%/}/api/jobs/trigger-expiry-check" \
+            --max-time 60 \
+            -H "x-admin-secret: ${ADMIN_JOB_SECRET}" \
+            -H "Content-Type: application/json"

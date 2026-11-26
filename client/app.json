@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Shelf Life",
+    "slug": "shelf-life",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#124831"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shelflife.app"
+    },
+    "android": {
+      "package": "com.shelflife.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#124831",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_MEDIA_IMAGES"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#10B981"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Shelf Life to access your photos to attach food item images.",
+          "cameraPermission": "Allow Shelf Life to use the camera to photograph food items."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Shelf Life to use the camera to scan grocery barcodes."
+        }
+      ]
+    ]
+  }
+}
